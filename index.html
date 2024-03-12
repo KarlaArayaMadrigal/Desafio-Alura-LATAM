@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador Alura</title>
+    <link rel="icon" href="Imágenes/alura.png" type="image/png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><img src="Imágenes/Logo.png" alt="Logo de alura y nombre de estudiante" id="logoAlura"></h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="texto">
+                <label for="mensaje">Ingrese el texto aquí</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+            </section>
+            <section class="alerta">
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="20" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                    </svg> Solo letras minúsculas y sin acentos</p>
+            </section>
+            <section class="botonesTexto">
+                <button onclick="cifrarTexto();" id="cifrar">Cifrar</button>
+                <button onclick="descifrarTexto();" id="descifrar">Descifrar</button>
+            </section>
+        </div>
+        <div class="container_textoEncriptado">
+            <div class="rectangulo">
+                <img src="Imágenes/Muñeco.png" alt="Una persona mira con una lupa un diamante" id="imagen">
+                <p id="textoCifrado"></p>
+                <p id="textoDescifrado"></p>
+                <p class="textoVacio" style="display: none;">Ningún mensaje fue encontrado.</p>
+                <p class="ingresaTexto" style="display: none;">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button onclick="copiarTexto();" id="copiaTexto" class="btn-copia"> Copiar </button>
+            </div>
+            <div class="container_footer">
+                <footer>Creado por Karla Daniela Araya Madrigal  
+                    <a href="https://github.com/KarlaArayaMadrigal"><i class="fab fa-github" style="font-size: 30px;"></i></a>
+                    <a href="https://linkedin.com/in/karla-daniela-araya-madrigal"><i class="fa fa-linkedin-square" style="font-size: 30px;"></i></a>
+                </footer>
+            </div>
+            
+            
+    </main>
+</body>
+</html>
+
+

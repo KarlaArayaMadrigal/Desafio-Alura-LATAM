@@ -1,0 +1,257 @@
+body{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 65%;
+}
+#logoAlura{
+    width: 120px;
+    display: block;
+    margin: 40px;
+    height: 48px;
+    
+}
+label{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 27px;
+    font-size: 25px;
+    color: darkblue;
+    width: 577px;
+    height: 48px;
+    top: 168px;
+    left: 240px
+
+}
+.container{
+    display: block;
+    float: left;
+    width: 940px;
+    padding: 40px;
+    margin-top: 20px;
+    
+}
+.texto{
+    width: 45%;
+    margin-left: 20%;
+}
+#mensaje{
+    width: 850px;
+    margin-top: 40px;
+    color:#0A3871;
+    background-color: transparent;
+    border-style: none;
+    font-weight: 400;
+    height: 350px;
+    font-size: 24px;
+    line-height: 48px;
+}
+.alerta{
+    display: flex;
+    color: #495057;
+    align-items: center;
+    opacity: 80%;
+    position: relative;
+    top: 80%;
+    margin-top: 120px;
+    left: 255px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botonesTexto{
+    display: flex; 
+    justify-content: space-between;
+    width: 680px; 
+    height: 67px; 
+    gap: 24px; 
+    position: absolute; 
+    top: 760px; 
+    left: 240px;
+    margin: 30px;
+}
+#cifrar{
+    color: whitesmoke;
+    background-color: darkblue;
+    font: bold;
+    font-size: 18px;
+    border-radius: 24px;
+    border-style: none;
+    border: 1%;
+    height: 67px;
+    width: 328px;
+    margin-top: 3px;
+}
+#descifrar{
+    color: darkblue;
+    font-size: 18px;
+    border-radius: 24px;
+    border-style: solid;
+    border-color: darkblue;
+    background-color: #D8DFE8;
+    border: 1%;
+    height: 67px;
+    width: 328px;
+    margin-top: 3px;
+}
+.container_textoEncriptado{
+    display: flex;
+    width: 420px;
+    height: auto;
+    position: relative;
+    top: -80px;
+    right: -5%;
+    border-radius: 32px;
+    background-color: white;
+    margin-left: 1150px; 
+    box-shadow: 0px 24px 32px -8px #00000014;
+
+}
+
+#imagen{
+    padding: 25px;
+    margin-top: 155px;
+    object-fit: cover;
+    margin-left: 5px;   
+}
+#textoCifrado{
+    display: flex;
+    color: #495057;
+    font-size: 24px;
+    height: auto;
+    width: 240px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: system-ui;
+}
+#textoDescifrado{
+    display: flex;
+    color: #495057;
+    font-size: 24px;
+    height: auto;
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: system-ui;
+}
+.textoVacio{
+    display: flex;
+    color: #495057;
+    font: bold;
+    margin-top: 4%;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;  
+    width: 100%; 
+}
+.ingresaTexto{
+    color: #868E96;
+    width: 100%;
+    height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 0px;
+    margin: 5%;
+}
+
+#copiaTexto{
+    display: none;
+    top: 740px;
+    margin-top: 50px;
+    margin: 7%;
+    width: 336px;
+    height: 53px;
+    color: darkblue;
+    border-radius: 24px;
+    border: 1px;
+    border-style: double;
+    gap: 8px;
+    background-color: white;
+
+}
+#copiaTexto:hover {
+    background-color: #f0f0f0;
+}
+.container_footer {
+    display: block;
+    right: inherit;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    right: 7px;
+    position: fixed;
+    width: 30%;
+    border-radius: 15px;
+    bottom: 0;
+    background-color: #8dbefa47;
+    padding: 10px;
+}
+  
+footer {
+    text-align: center;
+}
+/* Contenido responsivo*/
+@media only screen and (min-width: 300px) and (max-width: 1280px) {
+    .botonesTexto{
+        width: 688px;
+        left: 250px;
+    }
+    #cifrar{
+        width: 332px;
+        height: 67px;
+        font-size: 20px;
+    }
+    #descifrar{
+        width: Fill (332px);
+        height: 67px;
+        font-size: 20px;
+    }
+    .container_textoEncriptado {
+        display: flex;
+        position: relative;
+        right: 1000px;
+        width: 930px;
+        height: auto;
+        top: 85px;
+    }
+    #imagen{
+        display: none;
+    }
+    .textoVacio{
+        width: 100%;
+        margin-left: 200px;
+        margin-top: 20%;
+    }
+    .ingresaTexto{
+        width: 100%;
+        margin-left: 200px;
+    }
+    #copiaTexto{
+        height: 35px;
+        width: 140px;
+        display: block;
+        margin: 50px;
+        opacity: 70%;
+        margin-left: 410px;
+    }
+    
+    
+    .container_footer{
+        display: flex;
+        position: absolute;
+        width: auto;
+        margin: -80px;
+        margin-right: 20px;
+    }
+}
+    
